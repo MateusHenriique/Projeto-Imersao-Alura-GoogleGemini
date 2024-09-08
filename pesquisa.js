@@ -10,10 +10,6 @@ function respostas() {
     let resultado = "";
     
     if (!campoPesquisa) {
-
-        section.innerHTML = `
-            <p> Não foi encontrado nenhum resultado em nossa base de dados.</p>
-        `;
         return;
     }
 
@@ -32,7 +28,7 @@ function respostas() {
                                                 
                     }</h2></a>
                     <p class="descricao-meta">${dado.descricao}</p>
-                    <a href="${dado.link}" target="_blank">Mais informações sobre o violão aqui</a>
+                    <a href="${dado.link}" target="_blank">Mais informações sobre o ${dado.titulo} aqui</a>
                 </div>
             `;
         }    
